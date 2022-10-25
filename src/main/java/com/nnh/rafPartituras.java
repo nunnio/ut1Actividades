@@ -58,17 +58,13 @@ class Partitura {
         }
     }
     public void escribirDuplicados(RandomAccessFile raf){
-        File f = new File("sinonimos.dat"); // Creo un objeto File con nombre sinonimos.dat
-        if(f.exists()){ // Si el fichero existe escribo en él
+        try {
+            PrintWriter pw = new PrintWriter("sinonimos.dat"); // Creo un objeto PrintWriter, el cual tendrá creará un fichero llamado sinonimos.dat
+            pw.println("Número de serie: "+id+"\nAño de publicación: "+anio+"\nTítulo: "+tit+"\nAutor: "+aut);
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        }
 
-        }
-        else {
-            try {
-                f.createNewFile();
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
-        }
     }
 
 }
