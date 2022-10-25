@@ -1,16 +1,19 @@
 package com.nnh;
 
-import java.io.EOFException;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.RandomAccessFile;
+import java.io.*;
 import java.util.Scanner;
 
 class Partitura {
     private static final int maxString = 50;
-    private static final int TAM = 2*(maxString + 1) + 2*Integer.SIZE/8;
+    public static final int TAM = 2*(maxString + 1) + 2*Integer.SIZE/8;
     //hacer tamlist
-    int id; double anio; String tit, aut;
+    int id, tamPas; double anio; String tit, aut;
+
+    public int getTamPas() {
+        //tamPas = TAM;
+        return TAM;
+    }
+
     public Partitura(int id, double anio, String tit, String aut) {
         this.id = id;
         this.anio = anio;
@@ -54,6 +57,20 @@ class Partitura {
             e.printStackTrace();
         }
     }
+    public void escribirDuplicados(RandomAccessFile raf){
+        File f = new File("sinonimos.dat"); // Creo un objeto File con nombre sinonimos.dat
+        if(f.exists()){ // Si el fichero existe escribo en él
+
+        }
+        else {
+            try {
+                f.createNewFile();
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        }
+    }
+
 }
 
 public class rafPartituras {
@@ -98,7 +115,19 @@ public class rafPartituras {
         System.out.println("Introduce el nombre del autor:");
         aut = sc.nextLine();
         p = new Partitura(id, anio, tit, aut);
-        p.escribirAlta(raf);
+        try {
+            System.out.println(p.TAM);
+            raf.seek((long) (id - 1) * p.TAM);
+            if(!existe(id)) //Si no existe
+                p.escribirAlta(raf);
+            //else //Si existe
+                //p.escribirDuplicados(raf);
+        } catch (EOFException e){
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
     }
     public static void consulta(){
         int idCon, id; double anio; String tit, aut;
@@ -107,5 +136,16 @@ public class rafPartituras {
         idCon = sc.nextInt();
         p = new Partitura(idCon, 0, "", "");
         p.escribirConsulta(raf);
+    }
+    public static boolean existe(int id)
+    {
+        try
+        {
+            raf.seek((id-1)*Partitura.TAM);
+            return raf.readInt()==id; //Devuelve true si son iguales, por lo que significa que ya existe.
+        }
+        catch(EOFException e) {}
+        catch(IOException e){e.printStackTrace();}
+        return false;
     }
 }
