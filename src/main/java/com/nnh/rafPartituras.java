@@ -58,12 +58,24 @@ class Partitura {
         }
     }
     public void escribirDuplicados(RandomAccessFile raf){
+        try (DataOutputStream dos = new DataOutputStream(new FileOutputStream("sinonimos.dat", true)))
+        {
+            dos.writeInt(id);
+            dos.writeDouble(anio);
+            dos.writeUTF(tit);
+            dos.writeUTF(aut);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        /*
         try {
             PrintWriter pw = new PrintWriter("sinonimos.dat"); // Creo un objeto PrintWriter, el cual tendrá creará un fichero llamado sinonimos.dat
             pw.println("Número de serie: "+id+"\nAño de publicación: "+anio+"\nTítulo: "+tit+"\nAutor: "+aut);
+            pw.close();
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }
+         */
 
     }
 
@@ -116,8 +128,8 @@ public class rafPartituras {
             raf.seek((long) (id - 1) * p.TAM);
             if(!existe(id)) //Si no existe
                 p.escribirAlta(raf);
-            //else //Si existe
-                //p.escribirDuplicados(raf);
+            else //Si existe
+                p.escribirDuplicados(raf);
         } catch (EOFException e){
         } catch (IOException e) {
             e.printStackTrace();
