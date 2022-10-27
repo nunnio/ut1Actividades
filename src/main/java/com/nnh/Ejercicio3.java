@@ -19,15 +19,13 @@ public class Ejercicio3 {
         System.out.println("\n\t-- Creador de ficheros XML --");
         System.out.println("A continuación crearemos las parituras que desees añadir, PRESIONA 0 en el id para dejar de añadir: ");
         Vector<Partitura> listaPartituras = creaPartituras();
-        creaXml(listaPartituras);
         System.out.println("Generando un fichero XML...");
+        creaXml(listaPartituras);
+        System.out.println("El fichero XML creado está compuesto por: ");
+        leeXml();
     }
     public static Vector<Partitura> creaPartituras(){
         Scanner sc = new Scanner(System.in);
-        /*Partitura p1 = new Partitura(001,2000,"Criminal","Eminem");
-        Partitura p2 = new Partitura(002,1990, "Hotel California", "Gipsy Kings");
-        listaPartituras.add(p1);
-        listaPartituras.add(p2);*/
         int id, n= 1; double anio; String tit, aut;
         Vector<Partitura> listaPartituras = new Vector<Partitura>();
         for (int i = 1; true; i++){

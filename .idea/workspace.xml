@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a61f4c47-a686-42e9-9e6d-c7a0874ef845" name="Changes" comment="Ejercicio Partituras completado, Ejercicio2 creado, Partitura separado de rafPartituras Ejercicio3 empezado">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="a61f4c47-a686-42e9-9e6d-c7a0874ef845" name="Changes" comment="Ejercicio 3 completado gracias a Diego :3">
+      <change afterPath="$PROJECT_DIR$/partitura.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nnh/Ejercicio3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nnh/Ejercicio3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +61,7 @@
       <workItem from="1666697412861" duration="889000" />
       <workItem from="1666777200724" duration="4753000" />
       <workItem from="1666796108686" duration="4085000" />
-      <workItem from="1666885432962" duration="5161000" />
+      <workItem from="1666885432962" duration="5568000" />
     </task>
     <task id="LOCAL-00001" summary="Primer commit">
       <created>1666679261890</created>
@@ -92,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666799968746</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Ejercicio 3 completado gracias a Diego :3">
+      <created>1666890806416</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1666890806416</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,6 +119,7 @@
     <MESSAGE value="Primer commit" />
     <MESSAGE value="Segundo commit" />
     <MESSAGE value="Ejercicio Partituras completado, Ejercicio2 creado, Partitura separado de rafPartituras Ejercicio3 empezado" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ejercicio Partituras completado, Ejercicio2 creado, Partitura separado de rafPartituras Ejercicio3 empezado" />
+    <MESSAGE value="Ejercicio 3 completado gracias a Diego :3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ejercicio 3 completado gracias a Diego :3" />
   </component>
 </project>
