@@ -77,12 +77,12 @@ public class Ejercicio3 {
             texto = document.createTextNode(String.valueOf(p.getAnio()));
             nodoDatos.appendChild(texto);
 
-            nodoDatos = document.createElement("titulo");
+            nodoDatos = document.createElement("autor");
             nodoPartitura.appendChild(nodoDatos);
             texto = document.createTextNode(p.getTit());
             nodoDatos.appendChild(texto);
 
-            nodoDatos = document.createElement("autor");
+            nodoDatos = document.createElement("titulo");
             nodoPartitura.appendChild(nodoDatos);
             texto = document.createTextNode(p.getAut());
             nodoDatos.appendChild(texto);
@@ -109,12 +109,13 @@ public class Ejercicio3 {
             Document document = builder.parse(new File("partitura.xml"));
             NodeList partituras = document.getElementsByTagName("partitura");
             for(int i = 0; i<partituras.getLength(); i++){
+                System.out.println("Partitura nº "+(i+1));
                 Node partitura = partituras.item(i);
                 Element element = (Element) partitura;
-                System.out.println(element.getElementsByTagName("id").item(0).getChildNodes().item(0).getNodeValue());
-                System.out.println(element.getElementsByTagName("anio").item(0).getChildNodes().item(0).getNodeValue());
-                System.out.println(element.getElementsByTagName("titulo").item(0).getChildNodes().item(0).getNodeValue());
-                System.out.println(element.getElementsByTagName("autor").item(0).getChildNodes().item(0).getNodeValue());
+                System.out.println("ID: "+element.getElementsByTagName("id").item(0).getChildNodes().item(0).getNodeValue());
+                System.out.println("Año de publicación: "+element.getElementsByTagName("anioPublicacion").item(0).getChildNodes().item(0).getNodeValue());
+                System.out.println("Autor: "+element.getElementsByTagName("autor").item(0).getChildNodes().item(0).getNodeValue());
+                System.out.println("Título: "+element.getElementsByTagName("titulo").item(0).getChildNodes().item(0).getNodeValue());
             }
         } catch (ParserConfigurationException e) {
             throw new RuntimeException(e);

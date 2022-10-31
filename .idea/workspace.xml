@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a61f4c47-a686-42e9-9e6d-c7a0874ef845" name="Changes" comment="Planteamiento de lectura XML en ejercicio3">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/partitura.xml" beforeDir="false" afterPath="$PROJECT_DIR$/partitura.xml" afterDir="false" />
+    <list default="true" id="a61f4c47-a686-42e9-9e6d-c7a0874ef845" name="Changes" comment="Commit actualizacion">
+      <change beforePath="$PROJECT_DIR$/partitura.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nnh/Ejercicio3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nnh/Ejercicio3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,6 +63,7 @@
       <workItem from="1666796108686" duration="4085000" />
       <workItem from="1666885432962" duration="5618000" />
       <workItem from="1667219162090" duration="911000" />
+      <workItem from="1667231701400" duration="353000" />
     </task>
     <task id="LOCAL-00001" summary="Primer commit">
       <created>1666679261890</created>
@@ -107,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666891036836</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Commit actualizacion">
+      <created>1667231774177</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1667231774177</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,6 +137,7 @@
     <MESSAGE value="Ejercicio Partituras completado, Ejercicio2 creado, Partitura separado de rafPartituras Ejercicio3 empezado" />
     <MESSAGE value="Ejercicio 3 completado gracias a Diego :3" />
     <MESSAGE value="Planteamiento de lectura XML en ejercicio3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Planteamiento de lectura XML en ejercicio3" />
+    <MESSAGE value="Commit actualizacion" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit actualizacion" />
   </component>
 </project>
