@@ -1,9 +1,8 @@
 package com.nnh;
 
-import org.w3c.dom.DOMImplementation;
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.Text;
+import org.w3c.dom.*;
+import org.xml.sax.SAXException;
+
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
@@ -11,18 +10,22 @@ import javax.xml.transform.*;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 import java.io.File;
+import java.io.IOException;
 import java.util.Scanner;
 import java.util.Vector;
 
 public class Ejercicio3 {
+
     public static void main(String[] args) {
+        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+        DocumentBuilder builder = null;
         System.out.println("\n\t-- Creador de ficheros XML --");
         System.out.println("A continuación crearemos las parituras que desees añadir, PRESIONA 0 en el id para dejar de añadir: ");
         Vector<Partitura> listaPartituras = creaPartituras();
         System.out.println("Generando un fichero XML...");
-        creaXml(listaPartituras);
+        creaXml(listaPartituras, builder, factory);
         System.out.println("El fichero XML creado está compuesto por: ");
-        leeXml();
+        leeXml(builder, factory);
     }
     public static Vector<Partitura> creaPartituras(){
         Scanner sc = new Scanner(System.in);
@@ -45,9 +48,8 @@ public class Ejercicio3 {
         }
         return listaPartituras;
     }
-    public static void creaXml(Vector<Partitura> listaPartituras){
-        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-        DocumentBuilder builder = null;
+    public static void creaXml(Vector<Partitura> listaPartituras, DocumentBuilder builder, DocumentBuilderFactory factory){
+
         try {
             builder = factory.newDocumentBuilder();
         } catch (ParserConfigurationException e) {
@@ -99,5 +101,29 @@ public class Ejercicio3 {
         } catch (TransformerException e) {
             throw new RuntimeException(e);
         }
+    }
+    public static void leeXml(DocumentBuilder builder, DocumentBuilderFactory factory){
+        factory = DocumentBuilderFactory.newInstance();
+        try {
+            builder = factory.newDocumentBuilder();
+            Document document = builder.parse(new File("partitura.xml"));
+            NodeList partituras = document.getElementsByTagName("partitura");
+            for(int i = 0; i<partituras.getLength(); i++){
+                Node partitura = partituras.item(i);
+                Element element = (Element) partitura;
+                System.out.println(element.getElementsByTagName("id").item(0).getChildNodes().item(0).getNodeValue());
+                System.out.println(element.getElementsByTagName("anio").item(0).getChildNodes().item(0).getNodeValue());
+                System.out.println(element.getElementsByTagName("titulo").item(0).getChildNodes().item(0).getNodeValue());
+                System.out.println(element.getElementsByTagName("autor").item(0).getChildNodes().item(0).getNodeValue());
+            }
+        } catch (ParserConfigurationException e) {
+            throw new RuntimeException(e);
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (SAXException e) {
+            throw new RuntimeException(e);
+        }
+
+
     }
 }
