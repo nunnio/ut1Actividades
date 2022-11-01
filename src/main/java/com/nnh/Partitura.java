@@ -16,7 +16,7 @@ class Partitura {
     public Partitura(int id, double anio, String tit, String aut) {
         this.id = id;
         this.anio = anio;
-        this.tit = tit.substring(0, Math.min(20, tit.length())); //quitar esto y añadirlo al momento de writeline
+        this.tit = tit.substring(0, Math.min(20, tit.length()));
         this.aut = aut.substring(0, Math.min(20, aut.length())); ;
     }
     public void muestra(){
@@ -67,7 +67,17 @@ class Partitura {
             throw new RuntimeException(e);
         }
     }
-
+    // Contructor
+    public Partitura(int id, int tamPas, double anio, String tit, String aut) {
+        this.id = id;
+        this.tamPas = tamPas;
+        this.anio = anio;
+        this.tit = tit;
+        this.aut = aut;
+    }
+    public Partitura(){
+    }
+    // Setters & getters
     public int getId() {
         return id;
     }
@@ -98,5 +108,16 @@ class Partitura {
 
     public void setAut(String aut) {
         this.aut = aut;
+    }
+    // ToString
+    @Override
+    public String toString() {
+        return "Partitura{" +
+                "id=" + id +
+                ", tamPas=" + tamPas +
+                ", anio=" + anio +
+                ", tit='" + tit + '\'' +
+                ", aut='" + aut + '\'' +
+                '}';
     }
 }

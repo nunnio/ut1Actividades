@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a61f4c47-a686-42e9-9e6d-c7a0874ef845" name="Changes" comment="Commit actualizacion">
+    <list default="true" id="a61f4c47-a686-42e9-9e6d-c7a0874ef845" name="Changes" comment="Ejercicio 3 completado">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nnh/Ejercicio4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nnh/Partituras.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/partitura.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nnh/Ejercicio3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nnh/Ejercicio3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nnh/Partitura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nnh/Partitura.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +67,8 @@
       <workItem from="1666796108686" duration="4085000" />
       <workItem from="1666885432962" duration="5618000" />
       <workItem from="1667219162090" duration="911000" />
-      <workItem from="1667231701400" duration="353000" />
+      <workItem from="1667231701400" duration="1258000" />
+      <workItem from="1667298238057" duration="3448000" />
     </task>
     <task id="LOCAL-00001" summary="Primer commit">
       <created>1666679261890</created>
@@ -114,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667231774177</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Ejercicio 3 completado">
+      <created>1667232340381</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1667232340381</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,6 +150,7 @@
     <MESSAGE value="Ejercicio 3 completado gracias a Diego :3" />
     <MESSAGE value="Planteamiento de lectura XML en ejercicio3" />
     <MESSAGE value="Commit actualizacion" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit actualizacion" />
+    <MESSAGE value="Ejercicio 3 completado" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ejercicio 3 completado" />
   </component>
 </project>
