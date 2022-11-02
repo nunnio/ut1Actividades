@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a61f4c47-a686-42e9-9e6d-c7a0874ef845" name="Changes" comment="Ejercicio 3 completado">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nnh/Ejercicio4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nnh/Partituras.java" afterDir="false" />
+    <list default="true" id="a61f4c47-a686-42e9-9e6d-c7a0874ef845" name="Changes" comment="Ejercicio 3 completado gracias a Diego :3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/partitura.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nnh/Partitura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nnh/Partitura.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nnh/Ejercicio4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nnh/Ejercicio4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nnh/Partituras.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nnh/Partituras.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,20 +36,55 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/ciclosm/IdeaProjects/ut1Actividades",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
-}</component>
+}]]></component>
+  <component name="RunManager" selected="Application.Ejercicio4">
+    <configuration name="Ejercicio3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nnh.Ejercicio3" />
+      <module name="ut1Actividades" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nnh.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Ejercicio4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nnh.Ejercicio4" />
+      <module name="ut1Actividades" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nnh.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Ejercicio4" />
+        <item itemvalue="Application.Ejercicio3" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -65,10 +97,8 @@
       <workItem from="1666697412861" duration="889000" />
       <workItem from="1666777200724" duration="4753000" />
       <workItem from="1666796108686" duration="4085000" />
-      <workItem from="1666885432962" duration="5618000" />
-      <workItem from="1667219162090" duration="911000" />
-      <workItem from="1667231701400" duration="1258000" />
-      <workItem from="1667298238057" duration="3448000" />
+      <workItem from="1666885432962" duration="5568000" />
+      <workItem from="1667375643535" duration="1028000" />
     </task>
     <task id="LOCAL-00001" summary="Primer commit">
       <created>1666679261890</created>
@@ -105,28 +135,7 @@
       <option name="project" value="LOCAL" />
       <updated>1666890806416</updated>
     </task>
-    <task id="LOCAL-00006" summary="Planteamiento de lectura XML en ejercicio3">
-      <created>1666891036836</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1666891036836</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Commit actualizacion">
-      <created>1667231774177</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1667231774177</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Ejercicio 3 completado">
-      <created>1667232340381</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1667232340381</updated>
-    </task>
-    <option name="localTasksCounter" value="9" />
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,9 +157,6 @@
     <MESSAGE value="Segundo commit" />
     <MESSAGE value="Ejercicio Partituras completado, Ejercicio2 creado, Partitura separado de rafPartituras Ejercicio3 empezado" />
     <MESSAGE value="Ejercicio 3 completado gracias a Diego :3" />
-    <MESSAGE value="Planteamiento de lectura XML en ejercicio3" />
-    <MESSAGE value="Commit actualizacion" />
-    <MESSAGE value="Ejercicio 3 completado" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ejercicio 3 completado" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ejercicio 3 completado gracias a Diego :3" />
   </component>
 </project>

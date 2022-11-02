@@ -35,7 +35,7 @@ public class Ejercicio4 {
         Partitura p2 = new Partitura(200, 2010,"Waka Wakkak","Shakira");
         partituras.addPartitura(p1); partituras.addPartitura(p2);
         try {
-            context = JAXBContext.newInstance(p1.getClass());
+            context = JAXBContext.newInstance(partituras.getClass());
             marshaller = context.createMarshaller();
             marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
             marshaller.marshal(partituras, new File("partiturasJAXB.xml"));
