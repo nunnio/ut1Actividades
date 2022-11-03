@@ -4,7 +4,9 @@ import java.io.*;
 import java.util.Scanner;
 
 public class rafPartituras {
+    // Creamos un objeto RandomAccesFile raf
     private static RandomAccessFile raf = null;
+    // Creamos un objeto Scanner sc
     private static Scanner sc = null;
 
     public static void main(String[] args) {
